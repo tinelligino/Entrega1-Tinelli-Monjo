@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<main>
+    <div class="container">
+        <h1>Mi experiencia personal con Thor</h1>
+        <div class="row">
+          <div class="col-md">
+              <div class="card">
+                <img class="card-img-top" src="{% static 'img/imagenbd7.jfif' %}">
+                <div class="card-body">
+                  <h4 class="card-title">Les presento a Thor</h4>
+                  <p class="card-text">El es Thor, mi compañero de departamento. Es muy juguetón, tiene mucha energía y le gusta mucho salir a pasear. A pesar de que es una raza que tiende a ser obesa, él no padece de ello ya que mantiene mucha actividad diaria. Tiene su cama para dormir pero le gusta dormir conmigo porque es muy compañero y cariñoso. Aquel que ingrese a mi departamento lo primero que logrará ver son todos sus juguetes desparramados por cualquier lugar.</p>
+                </div>
+              </div>
+          </div>
+    
+          <div class="col-md">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Su relación con demás perros y personas</h4>
+                  <p class="card-text">A la hora de salir a pasear, tiende a ser muy enérgico y cuando ve otros perros comienza a tirar de la correa para acercarse a ellos para poder jugar. Con respecto a las personas, le encanta saludar a cualquier persona que vea y mucho más si lo quieren acariciar. Enseguida comienza a dar besos y demostrar que le está gustando la situación, sin descartar que tiene una obsesión con los niños. Salir a pasear con Thor es sinónimo de disfrutar y reirse ya que siempre hay algo nuevo por experimentar juntos.</p>
+                </div>
+                <img class="card-img-bottom" src="{% static 'img/imagenbd6.jfif' %}">
+              </div>
+          </div>
+    
+        </div>
+      </div>
+</main>
+{% endblock content %}

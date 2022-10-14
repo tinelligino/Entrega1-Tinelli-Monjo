@@ -1,0 +1,27 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css"/>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="logo">BIENVENIDOS/AS A ESTE PEQUEÑO BLOG SOBRE LOS "BullDogs Francés"</div>
+
+            <nav>
+                <a href="{% url 'inicio' %}">Inicio</a>
+                <a href="{% url 'info' %}">Info</a>
+                <a href="{% url 'experence' %}">Experiencia Personal</a>
+            </nav>
+        </div>
+    </header>
+    
+    {% block content %}
+    {% endblock content %}
+</body>
+</html>

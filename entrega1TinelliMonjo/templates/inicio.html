@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<main>
+    <div class="container">
+        <h1>Origen y características de los BullDogs Francés</h1>
+        <div class="row">
+          <div class="col-md">
+              <div class="card">
+                <img class="card-img-top" src="https://www.purina.es/sites/default/files/styles/ttt_image_original/public/2021-02/BREED%20Hero%20Desktop_0113_french_bulldog.webp?itok=BGeN1Rx-%22%3E">
+                <div class="card-body">
+                  <h4 class="card-title">Origen de la raza</h4>
+                  <p class="card-text">El bulldog francés tiene ya cierta carrera, concretamente desde la década de 1850. 
+                    Su origen de hecho está en Inglaterra, con el bulldog inglés, una raza que participaba en deportes de presa 
+                    y solían ser entrenados para diversas actividades de ocio. </p>
+                </div>
+              </div>
+          </div>
+    
+          <div class="col-md">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Tipos de BullDogs Francés según su color</h4>
+                  <p class="card-text">Bulldog frances negro.
+                    Bulldog frances chocolate.
+                    Bulldog frances merle o tricolor
+                    Bulldog frances blue.
+                    Bulldog frances fawn.
+                    Bulldog frances blanco y negro.
+                    Bulldog frances atigrado.</p>
+                </div>
+                <img class="card-img-bottom" src="{% static 'img/imagenbd1.jpg' %}">
+              </div>
+          </div>
+    
+        </div>
+      </div>
+</main>
+{% endblock content %}

@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<main>
+    <div class="container">
+        <h1>Información sobre la raza</h1>
+        <div class="row">
+          <div class="col-md">
+              <div class="card">
+                <img class="card-img-top" src="{% static 'img/imagenbd2.jpg' %}"">
+                <div class="card-body">
+                  <h4 class="card-title">Características principales</h4>
+                  <p class="card-text">Tamaño: Machos entre 11-15kg, 30cm de altura a la cruz - Hembras entre 11-15kg, 27cm de altura a la cruz. Su pelo es de longitud corta y lisa.
+                    Su nivel de energía es bastante elevado. La gran mayoría ronca al dormir, como también babean y ladran. Un dato no menor es que necesitan atención y socializar constantemente para la 
+                    estimulación del can. Su esperanza de vida ronda entre los 9 y 11 años.</p>
+                </div>
+              </div>
+          </div>
+    
+          <div class="col-md">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">A tener en cuenta</h4>
+                  <p class="card-text">El bulldog francés es una raza de perro que suele tener problemas respiratorios, provocando fuertes ronquidos y, en ocasiones, es necesario una operación de la nariz y el velo de la boca para mejorar su calidad de vida.</p>
+                </div>
+                <img class="card-img-bottom" src="{% static 'img/imagenbd3.jpg' %}">
+              </div>
+          </div>
+    
+        </div>
+      </div>
+</main>
+{% endblock content %}
