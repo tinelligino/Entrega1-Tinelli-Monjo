@@ -28,27 +28,33 @@ integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6J
                       <label for="nombre" class="colocar_nombre">Nombre
                         <span class="obligatorio">*</span>
                       </label>
-                    
-                      {% for item in users %}
-                      {% if item.nombre %}
-                      <input type="text" name="nombre" id="nombre"  placeholder="Escribe tu nombre" value="">
+                      {% if user.nombre %}
+                      <input type="text" name="nombre" id="nombre"  placeholder="Escribe tu nombre" value="{{user.nombre}}">
                       {% else %}
+                      <input type="text" name="nombre" id="nombre"  placeholder="Escribe tu nombre" value="">
                       {% endif %}
-                      {% endfor %}
-                    
                         
                     </p>
                     <p>
                         <label for="email" class="colocar_email">Email
                           <span class="obligatorio"></span>
                         </label>
-                          <input type="email" name="email" id="email" required="obligatorio" placeholder="Escribe tu Email">
+                        {% if user.email %}
+                          <input type="email" name="email" id="email" required="obligatorio" placeholder="Escribe tu Email" value="{{user.email}}">
+                          {% else %}
+                          <input type="email" name="email" id="email" required="obligatorio" placeholder="Escribe tu Email" value="">
+                          {% endif %}
                         </p>
+                      
       
                       <p>
                         <label for="telefone" class="colocar_telefono">Teléfono
                         </label>
-                          <input type="tel" name="telefono" id="telefono" placeholder="Escribe tu teléfono">
+                        {% if user.telefono %}
+                          <input type="tel" name="telefono" id="telefono" placeholder="Escribe tu teléfono" value="{{user.telefono}}">
+                          {% else %}
+                          <input type="tel" name="telefono" id="telefono" placeholder="Escribe tu teléfono" value="">
+                          {% endif %}
                       </p>
       
       

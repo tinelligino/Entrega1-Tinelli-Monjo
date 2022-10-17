@@ -18,8 +18,8 @@ def experence(request):
 @csrf_exempt
 def contact(request):
     if request.method == 'GET':
-
-        return render(request, 'contact.html')
+        context = {"user":[]}
+        return render(request, 'contact.html', context)
     if request.method == 'POST':
         nombre = request.POST["nombre"]
         email = request.POST["email"]
@@ -48,6 +48,8 @@ def historia(request):
 @csrf_exempt
 def buscar(request):
     #print(buscar)
+    if request.method == 'GET':
+        return render(request, 'contact.html')
     if request.method == 'POST':
         email = request.POST["emailbuscar"]
         #print(email)
